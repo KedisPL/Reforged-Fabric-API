@@ -4,6 +4,7 @@ Example features:
 - Biome API - With that you can modify vanilla biomes or add new End or Nether biomes.
 - You can register entities, features, etc. without using Forge Registries.
 - Compatibility with many mods.
+- And so much more!
  
 # Other information:
 This is a port of Fabric API made by FabricMC to Forge mod loader.
