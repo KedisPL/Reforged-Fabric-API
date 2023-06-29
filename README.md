@@ -20,6 +20,13 @@ To include Reforged Fabric API in the development environment, add the following
 ```
 modImplementation "curse.maven:reforged-fabric-api-FILE_ID:4613629"
 ```
+
+or
+
+```
+implementation fg.deobf("curse.maven:reforged-fabric-api-FILE_ID:4613629")
+```
+
 `FILE_ID` You can find it in the mod file url link. It's the numbers at the end of url.
 
 Then add the folowing to your `settings.gradle` file:
