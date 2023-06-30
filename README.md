@@ -29,7 +29,7 @@ implementation fg.deobf("curse.maven:reforged-fabric-api-FILE_ID:4613629")
 
 `FILE_ID` You can find it in the mod file url link. It's the numbers at the end of url.
 
-Then add the folowing to your `settings.gradle` file:
+Then add the folowing to your `build.gradle` file:
 
 ```
 repositories {
