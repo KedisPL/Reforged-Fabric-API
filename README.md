@@ -1,5 +1,5 @@
 # What is Reforged Fabric API?
-It's a core library, which adds features for mod developers to make forge mods easier.
+It's a core library, which adds features for mod developers to make forge mods easier and also to port Fabric mods to Forge easier.
 
 Example features:
 - Biome API - With that you can modify vanilla biomes or add new End or Nether biomes.
