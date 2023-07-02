@@ -18,10 +18,9 @@ To set up a Forge development environment, check out the [Forge MDK](https://fil
 To include Reforged Fabric API in the development environment, add the following to your `dependencies` block in the gradle buildscript:
 
 ```
-implementation fg.deobf("curse.maven:reforged-fabric-api-FILE_ID:4613629")
+implementation fg.deobf("curse.maven:reforged-fabric-api-872386:4614007")
 ```
 
-`FILE_ID` You can find it in the mod file url link. It's the numbers at the end of url.
 
 Then add the folowing to your `build.gradle` file:
 
