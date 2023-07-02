@@ -11,7 +11,7 @@ Example features:
 This is a port of Fabric API made by FabricMC to Forge mod loader.
 This is still in alpha so expect bugs.
 
-## How to use Reforged Fabric API to develop mods?
+## How to use Reforged Fabric API to develop mods with Forge MDK?
 
 To set up a Forge development environment, check out the [Forge MDK](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html) and follow the instructions there.
 
