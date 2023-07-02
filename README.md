@@ -3,7 +3,7 @@ It's a core library, which adds features for mod developers to make forge mods e
 
 Example features:
 - Biome API - With that you can modify vanilla biomes or add new End or Nether biomes.
-- You can register entities, features, etc. without using Forge Registries.
+- You can register entities, features, etc. without using Forge Registries. (Doesn't work with every type of registry!)
 - Compatibility with many mods.
 - And so much more!
  
