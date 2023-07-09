@@ -114,10 +114,7 @@
     "networking.client.accessor.ConnectScreenAccessor",
     "networking.client.accessor.MinecraftClientAccessor",
     "networking.client.ClientLoginNetworkHandlerMixin",
-    "networking.client.ClientPlayNetworkHandlerMixin",
-    "client.particle.ParticleManagerMixin",
-    "client.particle.ParticleManagerAccessor",
-    "client.particle.ParticleManagerAccessor$SimpleSpriteProviderAccessor"
+    "networking.client.ClientPlayNetworkHandlerMixin"
   ],
   "server": [
     "event.lifecycle.server.WorldChunkMixin"
