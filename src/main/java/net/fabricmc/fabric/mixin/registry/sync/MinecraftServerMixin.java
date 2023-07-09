@@ -44,7 +44,7 @@ public class MinecraftServerMixin {
 
 			BuiltInRegistries.bootStrap();
 			BlockInitTracker.postFreeze();
-			CreativeModeTabs.validate();
+			//CreativeModeTabs.validate();
 		}
 	}
 }

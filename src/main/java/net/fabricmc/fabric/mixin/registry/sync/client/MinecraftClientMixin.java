@@ -52,6 +52,6 @@ public class MinecraftClientMixin {
 		FABRIC_LOGGER.debug("Freezing registries");
 		BuiltInRegistries.bootStrap();
 		BlockInitTracker.postFreeze();
-		CreativeModeTabs.validate();
+		//CreativeModeTabs.validate();
 	}
 }
