@@ -44,7 +44,37 @@
     "biome.NoiseConfigMixin",
     "biome.TheEndBiomeSourceMixin",
     "biome.modification.DynamicRegistryManagerImmutableImplMixin",
-    "biome.modification.MinecraftServerMixin"
+    "biome.modification.MinecraftServerMixin",
+    "mininglevel.MiningToolItemMixin",
+    "mininglevel.ShearsItemMixin",
+    "mininglevel.SwordItemMixin",
+    "entity.event.elytra.LivingEntityMixin",
+    "entity.event.elytra.PlayerEntityMixin",
+    "entity.event.EntityMixin",
+    "entity.event.LivingEntityMixin",
+    "entity.event.PlayerEntityMixin",
+    "entity.event.PlayerManagerMixin",
+    "entity.event.ServerPlayerEntityMixin",
+    "registry.sync.BootstrapMixin",
+    "registry.sync.ChunkSerializerMixin",
+    "registry.sync.DebugChunkGeneratorAccessor",
+    "registry.sync.IdListMixin",
+    "registry.sync.LevelStorageSessionMixin",
+    "registry.sync.MinecraftServerMixin",
+    "registry.sync.RegistriesAccessor",
+    "registry.sync.RegistriesMixin",
+    "registry.sync.RegistryLoaderMixin",
+    "registry.sync.SimpleRegistryMixin",
+    "registry.sync.StructuresToConfiguredStructuresFixMixin",
+    "networking.ClientConnectionMixin",
+    "networking.EntityTrackerEntryMixin",
+
+    "networking.accessor.CustomPayloadC2SPacketAccessor",
+    "networking.accessor.EntityTrackerAccessor",
+    "networking.accessor.LoginQueryResponseC2SPacketAccessor",
+    "networking.accessor.ServerPlayNetworkHandlerAccessor",
+    "networking.accessor.ServerLoginNetworkHandlerAccessor",
+    "networking.accessor.ThreadedAnvilChunkStorageAccessor"
   ],
   "client": [
     "blockrenderlayer.RenderLayersMixin",
@@ -72,7 +102,22 @@
     "object.builder.client.HangingSignEditScreenMixin",
     "object.builder.client.ModelPredicateProviderRegistryAccessor",
     "object.builder.client.ModelPredicateProviderRegistrySpecificAccessor",
-    "object.builder.client.TexturedRenderLayersMixin"
+    "object.builder.client.TexturedRenderLayersMixin",
+    "client.model.BakedModelManagerMixin",
+    "client.model.ModelLoaderMixin",
+    "client.entity.event.elytra.ClientPlayerEntityMixin",
+
+    "registry.sync.client.ItemModelsMixin",
+    "registry.sync.client.MinecraftClientMixin",
+
+    "networking.client.accessor.ClientLoginNetworkHandlerAccessor",
+    "networking.client.accessor.ConnectScreenAccessor",
+    "networking.client.accessor.MinecraftClientAccessor",
+    "networking.client.ClientLoginNetworkHandlerMixin",
+    "networking.client.ClientPlayNetworkHandlerMixin",
+    "client.particle.ParticleManagerMixin",
+    "client.particle.ParticleManagerAccessor",
+    "client.particle.ParticleManagerAccessor$SimpleSpriteProviderAccessor"
   ],
   "server": [
     "event.lifecycle.server.WorldChunkMixin"

@@ -31,7 +31,9 @@ import net.minecraft.world.level.block.state.properties.WoodType;
  * <br>Hanging sign textures are stored at {@code [namespace]/textures/entity/signs/hanging/[path].png}.
  *
  * @see BlockSetTypeRegistry
+ * @deprecated use {@link WoodTypeBuilder}
  */
+@Deprecated
 public final class WoodTypeRegistry {
 	private WoodTypeRegistry() {
 	}

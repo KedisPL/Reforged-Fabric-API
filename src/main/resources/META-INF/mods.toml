@@ -7,9 +7,9 @@ version="${mod_version}"
 displayName="${mod_name}"
 authors="${mod_authors}"
 logoFile="icon.png"
-
 description='''${mod_description}'''
-[[dependencies.customportalapi]]
+
+[[dependencies.reforged_fabric_api]]
     modId="minecraft"
     mandatory=true
     versionRange="${minecraft_version_range}"
