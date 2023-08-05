@@ -16,22 +16,17 @@
 
 package net.fabricmc.fabric.impl.base.event;
 
-import net.minecraft.resources.ResourceLocation;
-
 import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+import net.fabricmc.fabric.impl.base.toposort.SortableNode;
+import net.minecraft.resources.ResourceLocation;
 
 /**
  * Data of an {@link ArrayBackedEvent} phase.
  */
-class EventPhaseData<T> {
+class EventPhaseData<T> extends SortableNode<EventPhaseData<T>> {
 	final ResourceLocation id;
 	T[] listeners;
-	final List<EventPhaseData<T>> subsequentPhases = new ArrayList<>();
-	final List<EventPhaseData<T>> previousPhases = new ArrayList<>();
-	int visitStatus = 0; // 0: not visited, 1: visiting, 2: visited
 
 	@SuppressWarnings("unchecked")
 	EventPhaseData(ResourceLocation id, Class<?> listenerClass) {
@@ -43,5 +38,10 @@ class EventPhaseData<T> {
 		int oldLength = listeners.length;
 		listeners = Arrays.copyOf(listeners, oldLength + 1);
 		listeners[oldLength] = listener;
+	}
+
+	@Override
+	protected String getDescription() {
+		return id.toString();
 	}
 }

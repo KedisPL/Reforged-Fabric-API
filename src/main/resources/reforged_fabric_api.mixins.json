@@ -5,7 +5,6 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "forge.GameDataMixin",
-    "forge.ServerLifecycleHooksMixin",
     "lookup.BlockEntityTypeAccessor",
     "lookup.ServerWorldMixin",
     "event.lifecycle.DataPackContentsMixin",
@@ -29,11 +28,9 @@
     "content.registry.FarmerWorkTaskAccessor",
     "content.registry.GiveGiftsToHeroTaskAccessor",
     "content.registry.HoeItemAccessor",
-
     "content.registry.LandPathNodeMakerMixin",
     "content.registry.AbstractFurnaceBlockEntityMixin",
     "content.registry.FireBlockMixin",
-
     "content.registry.ShovelItemAccessor",
     "content.registry.VillagerEntityAccessor",
     "biome.BiomeSourceMixin",
@@ -66,15 +63,23 @@
     "registry.sync.RegistryLoaderMixin",
     "registry.sync.SimpleRegistryMixin",
     "registry.sync.StructuresToConfiguredStructuresFixMixin",
+    "registry.sync.SerializableRegistriesMixin",
+    "registry.sync.TagManagerLoaderMixin",
     "networking.ClientConnectionMixin",
     "networking.EntityTrackerEntryMixin",
-
     "networking.accessor.CustomPayloadC2SPacketAccessor",
     "networking.accessor.EntityTrackerAccessor",
     "networking.accessor.LoginQueryResponseC2SPacketAccessor",
     "networking.accessor.ServerPlayNetworkHandlerAccessor",
     "networking.accessor.ServerLoginNetworkHandlerAccessor",
-    "networking.accessor.ThreadedAnvilChunkStorageAccessor"
+    "networking.accessor.ThreadedAnvilChunkStorageAccessor",
+    "dimension.EntityMixin",
+    "dimension.RegistryCodecsMixin",
+    "event.interaction.BeehiveBlockMixin",
+    "event.interaction.PlayerAdvancementTrackerMixin",
+    "event.interaction.ServerPlayerEntityMixin",
+    "event.interaction.ServerPlayerInteractionManagerMixin",
+    "event.interaction.ServerPlayNetworkHandlerMixin"
   ],
   "client": [
     "blockrenderlayer.RenderLayersMixin",
@@ -103,18 +108,17 @@
     "object.builder.client.ModelPredicateProviderRegistryAccessor",
     "object.builder.client.ModelPredicateProviderRegistrySpecificAccessor",
     "object.builder.client.TexturedRenderLayersMixin",
-    "client.model.BakedModelManagerMixin",
-    "client.model.ModelLoaderMixin",
     "client.entity.event.elytra.ClientPlayerEntityMixin",
-
     "registry.sync.client.ItemModelsMixin",
     "registry.sync.client.MinecraftClientMixin",
-
     "networking.client.accessor.ClientLoginNetworkHandlerAccessor",
     "networking.client.accessor.ConnectScreenAccessor",
     "networking.client.accessor.MinecraftClientAccessor",
     "networking.client.ClientLoginNetworkHandlerMixin",
-    "networking.client.ClientPlayNetworkHandlerMixin"
+    "networking.client.ClientPlayNetworkHandlerMixin",
+    "event.interaction.client.ClientPlayerInteractionManagerMixin",
+    "event.interaction.client.KeyBindingAccessor",
+    "event.interaction.client.MinecraftClientMixin"
   ],
   "server": [
     "event.lifecycle.server.WorldChunkMixin"

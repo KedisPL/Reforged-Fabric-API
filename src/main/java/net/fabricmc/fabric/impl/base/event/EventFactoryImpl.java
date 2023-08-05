@@ -28,7 +28,6 @@ import java.util.Set;
 import java.util.function.Function;
 
 import com.google.common.collect.MapMaker;
-
 import net.fabricmc.fabric.api.event.Event;
 import net.minecraft.resources.ResourceLocation;
 
@@ -119,6 +118,6 @@ public final class EventFactoryImpl {
 		final Object returnValue = defValue;
 		//noinspection unchecked
 		return (T) Proxy.newProxyInstance(EventFactoryImpl.class.getClassLoader(), new Class[]{handlerClass},
-			(proxy, method, args) -> returnValue);
+				(proxy, method, args) -> returnValue);
 	}
 }
