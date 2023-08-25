@@ -182,7 +182,8 @@ public abstract class SimpleRegistryMixin<T> implements WritableRegistry<T>, Rem
 		int indexedEntriesId = toId.getInt(object);
 
 		if (indexedEntriesId >= 0) {
-			throw new RuntimeException("Attempted to register object " + object + " twice! (at raw IDs " + indexedEntriesId + " and " + id + " )");
+			//throw new RuntimeException("Attempted to register object " + object + " twice! (at raw IDs " + indexedEntriesId + " and " + id + " )");
+			FABRIC_LOGGER.warn("Attempted to register object " + object + " twice! (at raw IDs " + indexedEntriesId + " and " + id + " )");
 		}
 
 		if (!byLocation.containsKey(registryId.location())) {
@@ -194,7 +195,8 @@ public abstract class SimpleRegistryMixin<T> implements WritableRegistry<T>, Rem
 				int oldId = toId.getInt(oldObject.value());
 
 				if (oldId != id) {
-					throw new RuntimeException("Attempted to register ID " + registryId + " at different raw IDs (" + oldId + ", " + id + ")! If you're trying to override an item, use .set(), not .register()!");
+					//throw new RuntimeException("Attempted to register ID " + registryId + " at different raw IDs (" + oldId + ", " + id + ")! If you're trying to override an item, use .set(), not .register()!");
+					FABRIC_LOGGER.warn("Attempted to register ID " + registryId + " at different raw IDs (" + oldId + ", " + id + ")! If you're trying to override an item, use .set(), not .register()!");
 				}
 
 				fabric_removeObjectEvent.invoker().onEntryRemoved(oldId, registryId.location(), oldObject.value());

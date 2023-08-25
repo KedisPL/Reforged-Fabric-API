@@ -92,7 +92,7 @@ abstract class ClientConnectionMixin implements ChannelInfoHolder {
 		}
 	}
 
-	@Inject(method = "doSendPacket", at = @At(value = "INVOKE_ASSIGN", target = "Lio/netty/channel/Channel;writeAndFlush(Ljava/lang/Object;)Lio/netty/channel/ChannelFuture;", remap = false), locals = LocalCapture.CAPTURE_FAILHARD)
+	@Inject(method = "doSendPacket", at = @At(value = "INVOKE_ASSIGN", target = "Lio/netty/channel/Channel;writeAndFlush(Ljava/lang/Object;)Lio/netty/channel/ChannelFuture;", remap = false), locals = LocalCapture.CAPTURE_FAILHARD, cancellable = true)
 	private void sendInternal(Packet<?> packet, @Nullable PacketSendListener listener, ConnectionProtocol packetState, ConnectionProtocol currentState, CallbackInfo ci, ChannelFuture channelFuture) {
 		if (listener instanceof GenericFutureListenerHolder holder) {
 			channelFuture.addListener(holder.getDelegate());
