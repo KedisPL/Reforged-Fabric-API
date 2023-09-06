@@ -1,3 +1,6 @@
+## DISCONTINUED!
+## Use Forgified Fabric API if you want the same thing. It's better than my port.
+
 # What is Reforged Fabric API?
 It's a core library, which adds features for mod developers to make forge mods easier and also to port Fabric mods to Forge easier.
 
